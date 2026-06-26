@@ -2,7 +2,7 @@ import numpy as np
 
 def f(x): return x**2
 
-def integral(f, a = 0, b = 1, n = 50_000):
+def integral(f, a = 0, b = 1, n = 30_000):
     dx = (b - a) / n 
     x_esquerda = a + np.arange(n) * dx
     x_direita = a + (np.arange(n) + 1) * dx
